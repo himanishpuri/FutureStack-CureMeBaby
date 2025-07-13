@@ -1,0 +1,29 @@
+{
+    "category": "agent",
+    "namespace": "b0295de098510871f845a7aa74d0ac50149a630a382a23e974f7961b2ae40dfd",
+    "name": "Cheer-Up",
+    "version": "0.0.8",
+    "description": "I'll be your silent listener. Here for your struggles, never to tell a soul. Shhh....",
+    "tags": [
+      "mental-health",
+      "support",
+      "therapy"
+    ],
+    "details": {
+      "agent": {
+        "defaults": {
+          "model": "llama-v3p1-405b-instruct",
+          "model_max_tokens": 16384
+        },
+        "welcome": {
+          "title": "Therapeutic Assistant",
+          "description": "Share what's on your mind. I'm here to listen and support you."
+        },
+        "framework": "base",
+        "icon": "https://app.near.ai/official-agent-images/orb.png",
+        "display_name": "Therapeutic Assistant"
+      },
+      "env_vars": {}
+    },
+    "show_entry": true
+  }

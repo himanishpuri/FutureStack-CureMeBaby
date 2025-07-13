@@ -1,0 +1,154 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: transparent;
+}
+
+.logoContainer {
+  background-color: white;
+  border-radius: 40px;
+  padding: 0.4rem 1rem;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  margin-left: 1rem;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 0.95);
+  text-decoration: none;
+}
+
+.logoContainer:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* New container just for positioning */
+.walletButtonContainer {
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-width: 320px;
+  gap: 0.5rem;
+}
+
+/* Keeping this for reference but it's not used anymore */
+.walletContainer {
+  display: none;
+}
+
+.walletContainer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, 
+    rgba(255, 255, 255, 0) 0%, 
+    rgba(255, 255, 255, 0.1) 50%, 
+    rgba(255, 255, 255, 0) 100%);
+  transition: all 0.8s ease;
+}
+
+.walletContainer:hover::before {
+  left: 100%;
+}
+
+.walletContainer:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.5);
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+@keyframes subtle-glow {
+  0% {
+    box-shadow: 0 5px 15px rgba(59, 130, 246, 0.35);
+  }
+  100% {
+    box-shadow: 0 5px 20px rgba(59, 130, 246, 0.6);
+  }
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.logo a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: color 0.2s;
+}
+
+.logo a:hover {
+  color: #3b82f6;
+}
+
+.logoImage {
+  transition: transform 0.3s ease;
+}
+
+.logo:hover .logoImage {
+  transform: scale(1.1);
+}
+
+.logoText {
+  background: linear-gradient(90deg, #333333, #0066cc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.logo:hover .logoText {
+  background: linear-gradient(90deg, #0066cc, #6c5ce7);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.navigation ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation li {
+  font-size: 0.95rem;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.2s;
+}
+
+.navigation a:hover {
+  color: #6c5ce7;
+}
+
+/* Also not used anymore */
+.contactButton {
+  display: none;
+}

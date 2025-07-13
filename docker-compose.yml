@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  # Main Node.js application service
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"  # Expose Node.js application port
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /var/run/docker.sock:/var/run/docker.sock  # For Docker-in-Docker
+    environment:
+      - NODE_ENV=production
+      - QDRANT_HOST=qdrant
+      - QDRANT_PORT=6333
+    depends_on:
+      - qdrant
+    restart: unless-stopped
+
+  # Qdrant vector database service (imported from scripts/docker-compose.yml)
+  qdrant:
+    image: qdrant/qdrant:latest
+    ports:
+      - "6333:6333"  # REST API
+      - "6334:6334"  # GRPC API
+    volumes:
+      - ./scripts/qdrant_storage:/qdrant/storage
+    environment:
+      - QDRANT_ALLOW_CORS=true
+    restart: unless-stopped
+
+networks:
+  default:
+    driver: bridge
