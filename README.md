@@ -209,7 +209,7 @@ Together, these studies underscore that gamification is not just an add-on but a
 
 ### Installation Steps
 
-1. git clone https://github.com/derek2403/CureMeBaby.git
+1. git clone https://github.com/himanishpuri/CureMeBaby.git
 2. cd CureMeBaby
 3. npm install --legacy-peer-deps
 4. npm run dev
