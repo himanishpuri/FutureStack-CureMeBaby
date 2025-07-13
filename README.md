@@ -305,29 +305,5 @@ Currently, our AI is provided by Hivemind and operates as a distributed swarm ou
 
 Instead of deploying separate personalized models for each user, the plan is to have the swarm cater to multiple users within a single TEE. This integrated approach maintains security and confidentiality while improving overall performance and efficiency through shared, adaptive learning and contextual processing.
 
----
-
-
-## Team👥
-
-- **Derek Liew Qi Jian**  
-  - *Role*: Project Lead, AI & TEE Integration
-  - [LinkedIn](https://www.linkedin.com/in/derek2403/) | [Twitter](https://x.com/derek2403)
-
-- **Phen Jing Yuan**  
-  - *Role*: Near Smart Contract Developer & The Swarm Coder
-  - [LinkedIn](https://www.linkedin.com/in/jing-yuan-phen-b42266295/) | [Twitter](https://x.com/ilovedahmo)
-
-- **Marcus Tan Chi Yau**  
-  - *Role*: Frontend Developer & UI/UX Design & Upstage Coder
-  - [LinkedIn](https://www.linkedin.com/in/marcus-tan-8846ba271/)
-
-- **Tan Zhi Wei**  
-  - *Role*: Frontend Developer & UI/UX Design  
-  - [LinkedIn](https://www.linkedin.com/in/tanzhiwei0328/)
- 
-- **Leong Ee Mun**  
-  - *Role*: Frontend Developer & UI/UX Design  
-  - [LinkedIn](https://www.linkedin.com/in/ee-mun-leong-700a23316/)
 
 
